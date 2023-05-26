@@ -17,12 +17,6 @@ spring:
     password: ${RABBITMQ_USER_PASS}
   cloud:
     gateway:
-      default-filters:
-        - name: GlobalFilter
-          args:
-            baseMessage: Spring Cloud Gateway Global Filter
-            preLogger: true
-            postLogger: true
       routes:
         - id: member-service
           uri: lb://MEMBER-SERVICE
