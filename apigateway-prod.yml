@@ -40,6 +40,7 @@ spring:
           '[/**]':
             allowedOrigins: 
               - http://localhost:3000
+              - http://localhost:3001
               - http://15.164.15.10:8080
               - http://donghun.me:80
               - http://donghun.me:8080
